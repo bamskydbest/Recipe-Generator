@@ -1,0 +1,161 @@
+.header-section {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 25%;
+}
+.header-image {
+  margin: auto;
+}
+.header-text {
+  font-size: 42px;
+  line-height: 60px;
+  color: #141413;
+  font-weight: 400;
+}
+.form-section {
+  margin: 100px 30px 30px;
+}
+.first-form {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+}
+.first-form .form input {
+  width: 600px;
+  padding: 10px;
+  border-radius: 0.6rem;
+  /* border: 2px groove #d1d5db; */
+  border: 1px solid #d1d5db;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.first-form .add-button button {
+  padding: 12px 25px;
+  background-color: #141413;
+  color: #fff;
+  border-radius: 0.6rem;
+  border: none;
+}
+.ingredients {
+  margin-left: 150px;
+}
+.ingredient h1 {
+  font-weight: 600;
+  line-height: 38px;
+  text-indent: 30px;
+  margin-left: 150px;
+}
+.ingredients ul {
+  margin-left: 10px;
+}
+.ingredients ul li {
+  line-height: 32px;
+  font-weight: 100;
+  color: #475467;
+}
+.me {
+  margin: 70px 0;
+}
+.recipe-section {
+  background-color: #f0efeb;
+  margin: auto;
+  width: 65%;
+  border-radius: 0.6rem;
+  padding: 15px;
+}
+.generate {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.generate-text h1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #141413;
+}
+.generate-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b7280;
+}
+.generate-button button {
+  background-color: #d17557;
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  margin-top: 40px;
+  border-radius: 0.6rem;
+}
+.suggested {
+  margin: auto;
+  width: 70%;
+}
+.suggested h1 {
+  line-height: 38px;
+  font-weight: 600;
+  color: #141413;
+}
+.suggested p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #475467;
+}
+.ingredient-two h1 {
+  font-weight: 700;
+  line-height: 28px;
+  text-indent: 30px;
+  margin-left: 150px;
+  color: #475467;
+  font-size: 18px;
+}
+.ingredients-two ul {
+  margin-left: 10px;
+}
+.ingredients-two ul li {
+  line-height: 28px;
+  font-weight: 700;
+  color: #475467;
+  font-size: 18px;
+}
+.instructions {
+  margin: auto;
+  width: 80%;
+}
+.instructions-text h1 {
+  line-height: 38px;
+  font-weight: 600;
+  color: #141413;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.instructions-final p {
+  line-height: 38px;
+  font-weight: 600;
+  color: #475467;
+  font-size: 18px;
+  margin-left: 160px;
+}
+.instructions-list ul {
+  list-style-type: none;
+}
+.instructions-list ul li {
+  line-height: 28px;
+  font-weight: 700;
+  color: #475467;
+  font-size: 18px;
+}
+#ing {
+  display: none;
+}
+#ingg {
+  display: none;
+}
