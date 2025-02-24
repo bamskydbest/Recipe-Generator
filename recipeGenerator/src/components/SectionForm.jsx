@@ -2,29 +2,29 @@ import React, { useState } from "react";
 
 const SectionForm = (prop) => {
   const [text, setText] = useState("");
+  const [items, setItems] = useState([]);
 
-  const handleIngredientBtn = () => {
-    document.getElementById("ing").style.display = "block";
+  const handleIngredientBtn = (e) => {
+    // document.getElementById("ing").style.display = "block";
+    e.preventDefault();
   };
   return (
     <div>
       <div className="form-section">
-        <div className="first-form">
-          <div className="form">
-            <form action="">
+        <div className="form">
+          <form action="" className="first-form" onSubmit={handleIngredientBtn}>
+            <div>
               <input
                 type="text"
                 placeholder="e.g. oregano"
-                value={text}
+                value={text.ingredientLists}
                 onChange={(e) => setText(e.target.value)}
               />
-            </form>
-          </div>
-          <div className="add-button">
-            <button type="button" onClick={handleIngredientBtn}>
-              + Add ingredient
-            </button>
-          </div>
+            </div>
+            <div className="add-button">
+              <button type="submit">+ Add ingredient</button>
+            </div>
+          </form>
         </div>
 
         <div id="ing">
@@ -35,7 +35,10 @@ const SectionForm = (prop) => {
             return (
               <div className="ingredients" key={ingredientLists.id}>
                 <ul>
-                  <li>{ingredientLists.ingredient}</li>
+                  {/* <li>{ingredientLists.ingredient}</li> */}
+                  {items.map((item) => {
+                    return <li key={item.id}>{item.value}</li>;
+                  })}
                 </ul>
               </div>
             );

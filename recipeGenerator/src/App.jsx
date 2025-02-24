@@ -4,38 +4,37 @@ import Header from "./components/Header";
 import SectionForm from "./components/SectionForm";
 import Ready from "./components/Ready";
 import Suggested from "./components/Suggested";
-import Instructions from "./components/Instructions";
 
 function App() {
   const ingredientLists = [
-    {
-      id: 1,
-      ingredient: "Chicken breasts",
-    },
-    {
-      id: 2,
-      ingredient: "Most of the main spices",
-    },
-    {
-      id: 3,
-      ingredient: "Olive oil",
-    },
-    {
-      id: 4,
-      ingredient: "Heavy cream",
-    },
-    {
-      id: 5,
-      ingredient: "Chicken broth",
-    },
-    {
-      id: 6,
-      ingredient: "Parmesan cheese",
-    },
-    {
-      id: 7,
-      ingredient: "Spinach",
-    },
+    // {
+    //   id: 1,
+    //   ingredient: "Chicken breasts",
+    // },
+    // {
+    //   id: 2,
+    //   ingredient: "Most of the main spices",
+    // },
+    // {
+    //   id: 3,
+    //   ingredient: "Olive oil",
+    // },
+    // {
+    //   id: 4,
+    //   ingredient: "Heavy cream",
+    // },
+    // {
+    //   id: 5,
+    //   ingredient: "Chicken broth",
+    // },
+    // {
+    //   id: 6,
+    //   ingredient: "Parmesan cheese",
+    // },
+    // {
+    //   id: 7,
+    //   ingredient: "Spinach",
+    // },
   ];
   const ingredientTwo = [
     {
