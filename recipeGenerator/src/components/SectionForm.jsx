@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const SectionForm = (prop) => {
+  const items = prop.items;
   const [text, setText] = useState("");
-  const [items, setItems] = useState([]);
 
   const handleIngredientBtn = (e) => {
-    // document.getElementById("ing").style.display = "block";
     e.preventDefault();
+    prop.setItems([...items, text]);
+    setText("");
   };
   return (
     <div>
+      <h1>Please Input Ingredients Below</h1>
       <div className="form-section">
         <div className="form">
-          <form action="" className="first-form" onSubmit={handleIngredientBtn}>
+          <form className="first-form" onSubmit={handleIngredientBtn}>
             <div>
               <input
                 type="text"
                 placeholder="e.g. oregano"
-                value={text.ingredientLists}
+                value={text}
                 onChange={(e) => setText(e.target.value)}
               />
             </div>
@@ -27,20 +29,19 @@ const SectionForm = (prop) => {
           </form>
         </div>
 
-        <div id="ing">
+        {items.length > 0 && (
           <div className="ingredient">
-            <h1>Ingredients on hand:</h1>
+            <h1>
+              Ingredients on hand (Ingredients must be more than four(4)):
+            </h1>
           </div>
-          {prop.ingredientLists.map((ingredientLists) => {
+        )}
+        <div className="ingredients" key={items.id}>
+          {items.map((item) => {
             return (
-              <div className="ingredients" key={ingredientLists.id}>
-                <ul>
-                  {/* <li>{ingredientLists.ingredient}</li> */}
-                  {items.map((item) => {
-                    return <li key={item.id}>{item.value}</li>;
-                  })}
-                </ul>
-              </div>
+              <ul>
+                <li key={item}>{item}</li>
+              </ul>
             );
           })}
         </div>
