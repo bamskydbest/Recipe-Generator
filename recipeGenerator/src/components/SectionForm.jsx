@@ -6,6 +6,7 @@ const SectionForm = (prop) => {
 
   const handleIngredientBtn = (e) => {
     e.preventDefault();
+    if (!text.trim()) return;
     prop.setItems([...items, text]);
     setText("");
   };
@@ -20,7 +21,11 @@ const SectionForm = (prop) => {
                 type="text"
                 placeholder="e.g. oregano"
                 value={text}
-                onChange={(e) => setText(e.target.value)}
+                onChange={(e) => {
+                  setText(e.target.value);
+                  console.log(e);
+                  //if(e.key === "Enter") handleAddIngredients()
+                }}
               />
             </div>
             <div className="add-button">
